@@ -30,7 +30,7 @@ spring:
         password: 'Delivery@1234'
         platform: mysql
         schema: classpath:/sql/schema.sql
-        url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false&useTimezone=true&serverTimezone=UTC
+        url: jdbc:mysql://localhost/oauth?allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false&requireSSL=false&useTimezone=true&serverTimezone=UTC
         username: delivery
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
