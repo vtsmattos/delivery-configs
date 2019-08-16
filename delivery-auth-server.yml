@@ -37,5 +37,5 @@ spring:
         generate-ddl: false
         hibernate:
             ddl-auto: none
+            format_sql: true
         show-sql: true
-        format-sql: true
