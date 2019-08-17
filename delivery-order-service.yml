@@ -28,7 +28,7 @@ spring:
         show-sql: true
         properties.hibernate:        
             format_sql: true
-            
+              
 authserver:
   hostname: http://localhost:9092
 security:
