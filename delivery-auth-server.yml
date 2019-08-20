@@ -1,8 +1,5 @@
 server:
   port: 9092
-spring:
-  application:
-    name: delivery-auth-server
 
 eureka:
   instance:
@@ -27,6 +24,8 @@ security:
             scope: read,write
 
 spring:
+    application:
+      name: delivery-auth-server
     datasource:
         data: classpath:/sql/data.sql
         driver-class-name: com.mysql.jdbc.Driver
