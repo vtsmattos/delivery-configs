@@ -18,7 +18,6 @@ spring:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: 'Delivery@1234'
         platform: mysql
-        schema: classpath:/sql/schema.sql
         url: jdbc:mysql://localhost/delivery?allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false&requireSSL=false&useTimezone=true&serverTimezone=UTC
         username: delivery
     jpa:
