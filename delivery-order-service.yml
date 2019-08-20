@@ -1,8 +1,5 @@
 server:
   port: 9093
-spring:
-  application:
-    name: delivery-order-service
 
 eureka:
   instance:
@@ -17,6 +14,8 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
 
 spring:
+    application:
+      name: delivery-order-service
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: 'Delivery@1234'
