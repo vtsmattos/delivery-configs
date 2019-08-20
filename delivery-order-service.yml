@@ -25,10 +25,8 @@ spring:
         database-platform: org.hibernate.dialect.MySQLDialect
         generate-ddl: false
         hibernate:
-            ddl-auto: none
+            ddl-auto: create
         show-sql: true
-        properties.hibernate:        
-            format_sql: true
               
 authserver:
   hostname: http://localhost:9092
