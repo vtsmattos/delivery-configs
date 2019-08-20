@@ -21,7 +21,7 @@ spring:
         url: jdbc:mysql://localhost/delivery?allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false&requireSSL=false&useTimezone=true&serverTimezone=UTC
         username: delivery
     jpa:
-        database-platform: org.hibernate.dialect.MySQL8Dialect
+        database-platform: org.hibernate.dialect.MySQL5Dialect
         generate-ddl: false
         hibernate:
             ddl-auto: create
