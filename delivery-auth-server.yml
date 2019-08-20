@@ -1,8 +1,5 @@
 server:
   port: 9092
-spring:
-  application:
-    name: delivery-auth-server
 
 eureka:
   instance:
@@ -27,16 +24,18 @@ security:
             scope: read,write
 
 spring:
+    application:
+        name: delivery-auth-server
     datasource:
         data: classpath:/sql/data.sql
-        driver-class-name: com.mysql.cj.jdbc.Driver
+        driver-class-name: com.mysql.jdbc.Driver
         password: 'Delivery@1234'
         platform: mysql
         schema: classpath:/sql/schema.sql
         url: jdbc:mysql://localhost/oauth?allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false&requireSSL=false&useTimezone=true&serverTimezone=UTC
         username: delivery
     jpa:
-        database-platform: org.hibernate.dialect.MySQL5Dialect
+        database-platform: org.hibernate.dialect.MySQLDialect
         generate-ddl: false
         hibernate:
             ddl-auto: update
