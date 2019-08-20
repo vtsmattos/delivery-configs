@@ -28,7 +28,7 @@ spring:
         name: delivery-auth-server
     datasource:
         data: classpath:/sql/data.sql
-        driver-class-name: com.mysql.jdbc.Driver
+        driver-class-name: com.mysql.cj.jdbc.Driver
         password: 'Delivery@1234'
         platform: mysql
         schema: classpath:/sql/schema.sql
