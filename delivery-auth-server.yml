@@ -1,5 +1,8 @@
 server:
   port: 9092
+spring:
+  application:
+    name: delivery-auth-server
 
 eureka:
   instance:

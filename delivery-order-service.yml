@@ -1,5 +1,8 @@
 server:
   port: 9093
+spring:
+  application:
+    name: delivery-order-service
 
 eureka:
   instance:
@@ -15,20 +18,17 @@ eureka:
 
 spring:
     datasource:
-        driver-class-name: com.mysql.jdbc.Driver
+        driver-class-name: com.mysql.cj.jdbc.Driver
         password: 'Delivery@1234'
         platform: mysql
-        schema: classpath:/sql/schema.sql
         url: jdbc:mysql://localhost/delivery?allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false&requireSSL=false&useTimezone=true&serverTimezone=UTC
         username: delivery
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
         generate-ddl: false
         hibernate:
-            ddl-auto: none
+            ddl-auto: update
         show-sql: true
-        properties.hibernate:        
-            format_sql: true
               
 authserver:
   hostname: http://localhost:9092
