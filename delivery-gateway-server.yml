@@ -16,7 +16,7 @@ zuul:
   sensitiveHeaders: Cookie,Set-Cookie
   routes:
     delivery-auth-server:
-      path: /api/**
+      path: /security/**
       serviceId: delivery-auth-server
     delivery-order-service:  
       path: /api/order/**
