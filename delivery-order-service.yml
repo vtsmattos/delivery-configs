@@ -29,7 +29,7 @@ spring:
             ddl-auto: update
         show-sql: true
 authserver:
-  hostname: http://localhost:9092
+  hostname: http://localhost:8000/security
 security:
   oauth2:
     resource:
